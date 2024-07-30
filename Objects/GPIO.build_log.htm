@@ -1,0 +1,189 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: tran minh, viettel, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  C:\Users\ThinkPad\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\ThinkPad\Documents\ARM_M4\project_FreeRTOS\GPIO.uvprojx
+Project File Date:  07/23/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\ThinkPad\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+compiling croutine.c...
+compiling list.c...
+task_atc25.c(24): warning: unused parameter 'xTask' [-Wunused-parameter]
+   24 | void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
+      |                                                 ^
+task_atc25.c(24): warning: unused parameter 'pcTaskName' [-Wunused-parameter]
+   24 | void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
+      |                                                              ^
+2 warnings generated.
+compiling task_atc25.c...
+compiling port.c...
+compiling main.c...
+compiling event_groups.c...
+compiling heap_1.c...
+compiling freertos_evr.c...
+compiling timers.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling tasks.c...
+linking...
+Program Size: Code=10442 RO-data=518 RW-data=16 ZI-data=48960  
+FromELF: creating hex file...
+".\Objects\GPIO.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.11.1.0.pack
+                ARM::CMSIS-FreeRTOS@11.1.0
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 11.1.0
+   * Component: Core Variant: Cortex-M Version: 11.1.0
+   * Component: Coroutines Version: 11.1.0
+   * Component: Event Groups Version: 11.1.0
+   * Component: Heap Variant: Heap_1 Version: 11.1.0
+   * Component: Message Buffer Version: 11.1.0
+   * Component: Stream Buffer Version: 11.1.0
+   * Component: Timers Version: 11.1.0
+
+Package Vendor: GigaDevice
+                http://gd32mcu.com/data/documents/pack/GigaDevice.GD32F30x_DFP.2.0.0.pack
+                GigaDevice::GD32F30x_DFP@2.0.0
+                GigaDevice GD32F30x Series Device Support and Examples
+   * Component: ADC Version: 1.0.2
+   * Component: EXTI Version: 1.0.2
+   * Component: GPIO Version: 1.0.2
+   * Component: I2C Version: 1.0.2
+   * Component: MISC Version: 1.0.2
+   * Component: PMU Version: 1.0.2
+   * Component: RCU Version: 1.0.2
+   * Component: TIMER Version: 1.0.2
+   * Component: USART Version: 1.0.2
+   * Component: GD32F30x_libopt Version: 1.0.2
+   * Component: Startup Version: 1.0.2
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/RTOS
+  ./RTE/_Target_1
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM4F
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/GigaDevice/GD32F30x_DFP/2.0.0/Device/Firmware/Peripherals/inc
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/GigaDevice/GD32F30x_DFP/2.0.0/Device/Include
+  C:/Users/ThinkPad/AppData/Local/Arm/Packs/GigaDevice/GD32F30x_DFP/2.0.0/Device/Template
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: ARM::RTOS&FreeRTOS:Config&FreeRTOS@11.1.0
+      Include file:  Source/examples/template_configuration/FreeRTOSConfig.h
+
+   * Component: ARM::RTOS&FreeRTOS:Core&Cortex-M@11.1.0
+      Include file:  Source/include/semphr.h
+      Include file:  Source/include/FreeRTOS.h
+      Source file:   Source/queue.c
+      Source file:   Source/tasks.c
+      Include file:  Source/include/task.h
+      Source file:   Source/portable/GCC/ARM_CM4F/port.c
+      Source file:   Source/list.c
+      Include file:  Source/include/queue.h
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM::RTOS&FreeRTOS:Coroutines@11.1.0
+      Include file:  Source/include/croutine.h
+      Source file:   Source/croutine.c
+
+   * Component: ARM::RTOS&FreeRTOS:Event Groups@11.1.0
+      Source file:   Source/event_groups.c
+      Include file:  Source/include/event_groups.h
+
+   * Component: ARM::RTOS&FreeRTOS:Heap&Heap_1@11.1.0
+      Source file:   Source/portable/MemMang/heap_1.c
+
+   * Component: ARM::RTOS&FreeRTOS:Message Buffer@11.1.0
+      Include file:  Source/include/message_buffer.h
+      Source file:   Source/stream_buffer.c
+
+   * Component: ARM::RTOS&FreeRTOS:Stream Buffer@11.1.0
+      Source file:   Source/stream_buffer.c
+      Include file:  Source/include/stream_buffer.h
+
+   * Component: ARM::RTOS&FreeRTOS:Timers@11.1.0
+      Source file:   Source/timers.c
+      Include file:  Source/include/timers.h
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:ADC@1.0.2
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_adc.h
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_adc.c
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:EXTI@1.0.2
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_exti.h
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_exti.c
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:GPIO@1.0.2
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_gpio.h
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_gpio.c
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:I2C@1.0.2
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_i2c.h
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_i2c.c
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:MISC@1.0.2
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_misc.c
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_misc.h
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:PMU@1.0.2
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_pmu.h
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_pmu.c
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:RCU@1.0.2
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_rcu.c
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_rcu.h
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:TIMER@1.0.2
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_timer.h
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_timer.c
+
+   * Component: GigaDevice::Device:GD32F30x_StdPeripherals:USART@1.0.2
+      Source file:   Device/Firmware/Peripherals/src/gd32f30x_usart.c
+      Include file:  Device/Firmware/Peripherals/inc/gd32f30x_usart.h
+
+   * Component: GigaDevice::Device:GD32F30x_libopt@1.0.2
+      Include file:  Device/Template/gd32f30x_libopt.h
+
+   * Component: GigaDevice::Device:Startup@1.0.2
+      Source file:   Device/Source/ARM/startup_gd32f30x_hd.s
+      Source file:   Device/Source/system_gd32f30x.c
+      Include file:  Device/Include/gd32f30x.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
